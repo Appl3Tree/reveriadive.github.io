@@ -1,6 +1,6 @@
 ## Welcome to Riveria Dive
 
-### Markdown
+### [Home](https://riveriadive.github.io)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
