@@ -1,4 +1,4 @@
-## Welcome to Riveria Dive
+## Welcome to Reveria Dive
 ### Select the game you are playing.
 
 ### [Fantasy Life](https://reveriaexplorer.herokuapp.com)
