@@ -1,5 +1,5 @@
 ## Welcome to Riveria Dive
-### Which game are you playing?
+### Select the game you are playing.
 
 ### [Fantasy Life](https://riveriadive.github.io)
 ### [Fantasy Life Online](https://riveriadive.github.io)
