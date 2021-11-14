@@ -1,0 +1,528 @@
+<div style="position:relative;">
+  <title>ReveriaDive</title>
+  <link data-turbolinks-track="false" href="../assets/application.css" media="all" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">ReveriaDive</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="../locations">Locations</a></li>
+        <li><a href="../items">Items</a></li>
+        <li><a href="../monsters">Monsters</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../shops">All Shops</a></li>
+            <li><a href="../shops/77">Coin Shop</a></li>
+            <li><a href="../statues">Goddess Statues</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="../recipes/8">Cook</a></li>
+              <li><a href="../recipes/9">Blacksmith</a></li>
+              <li><a href="../recipes/10">Carpenter</a></li>
+              <li><a href="../recipes/11">Tailor</a></li>
+              <li><a href="../recipes/12">Alchemist</a></li>
+          </ul>
+        </li>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+        <form accept-charset="UTF-8" action="../search" class="navbar-form navbar-right" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+        <div class="form-group">
+          <input class="form-control" id="query" name="query" placeholder="Quick search" type="search">
+        </div>
+        <input class="btn btn-primary" name="commit" type="submit" value="Search">
+		</form>      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../gatherer">Gatherer</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="../item/1">«</a>
+      </li>
+        <li class="">
+        <a href="../item/1">1</a>
+        </li>
+        <li class="">
+        <a href="../item/2">2</a>
+        </li>
+        <li class="active">
+        <a href="../item/3">3</a>
+        </li>
+        <li class="">
+        <a href="../item/4">4</a>
+        </li>
+        <li class="">
+        <a href="../item/5">5</a>
+        </li>
+      <li class="">
+      <a href="../item/8">»</a>
+      </li>
+    </ul><p></p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Sub Category</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+      <tbody><tr>
+        <td><a href="../items/101">Wooden Bed</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A simple wooden bed with green sheets. Seems quite sturdy.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/102">Simple Curtains</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>Simple curtains that can be dyed however you like.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/103">Castele Curtains</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>Simple curtains. Look good against the blue sky.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/104">Simple Carpet</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A simple carpet that can be dyed to your liking.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/105">Woven Castele Rug</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A traditional woven Castele rug. Keeps your feet warm.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/106">Simple Mat</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A simple mat that can be dyed to your liking.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/107">Woven Castele Mat</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A traditional woven Castele mat. A common feature in many homes.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/108">Simple Wall: Peach</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A pretty pink wall. Cute and stylish.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/109">Simple Wall: Green</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A relaxing green wall. Gives your room a back-to-nature feel.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/110">Wooden Wall</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A wooden wall for a fresh cabin feel.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/111">Traditional Castele Wall</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A traditional Castele wall. Goes with any furniture.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/112">Simple Floor: Peach</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A pink floor. Good for those who want a peachy vibe.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/113">Simple Floor: Green</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A green floor. Makes your neighbours green with envy.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/114">Wooden Floor</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>Wooden flooring. Nice and warm underfoot.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/115">Brick Floor</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A stylish brick floor. Feels rustic and homely.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/116">Terracotta Floor</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A floor made of baked tiles. Good for workshop floors as well as homes.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/117">Umbrella Tree</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A decorative plant that seems to have sprouted from a forgotten umbrella.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/118">Smiley Flower</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A perennial plant with yellow petals. Blooms all year round.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/119">Candle</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A huge candle for the home. Said to burn for hundreds of hours.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/120">Basket</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A basket for storing small objects, such as apples or laundry.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/121">Wooden Box</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>A wooden box. Mainly used to store vulnerable items during transit.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/122">Rubbish Bin</a></td>
+        <td><a href="../items/category/Decor">Decor</a></td>
+        <td>
+        </td>
+        <td>Container for rubbish. A tidy room is a happy room.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/123">Castele Crucian</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A small river fish. Eating it wouldn't hurt.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/124">Plains Sweetfish</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Delicious and easy to catch river fish.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/125">Elderwood Trout</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A river fish without that fishy smell. Makes a satisfying meal.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/126">Castele Carp</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A big river fish. It's rather smelly</td>
+      </tr>
+      <tr>
+        <td><a href="../items/127">Applefish</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Fish resembling an apple. A conversation piece at any dinner.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/128">Mutton</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Some people complain it's smelly, but others like it exactly for that reason.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/129">Chicken Meat</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Bird meat with the skin on.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/130">Beef</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Well-marbled beef.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/131">Chicken Eggs</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Regular eggs.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/132">Big Egg</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>That's one huge egg. Breakfast for the whole family.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/133">Cows' Milk</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Whole, unpasteurised cows' milk.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/134">Extra Creamy Milk</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Extra creamy, delicious cows' milk.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/135">Carrot</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fully grown orange carrot.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/136">Daikon Radish</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>White and juicy daikon radish</td>
+      </tr>
+      <tr>
+        <td><a href="../items/137">Potato</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bulbous potato</td>
+      </tr>
+      <tr>
+        <td><a href="../items/138">Onion</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A cruel vegetable that makes people cry.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/139">Castele Apple</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Castele's finest produce</td>
+      </tr>
+      <tr>
+        <td><a href="../items/140">Grassy Plains Barley</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Freshly harvested Grassy Plains barley</td>
+      </tr>
+      <tr>
+        <td><a href="../items/141">Port Rice</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Short-grain white rice</td>
+      </tr>
+      <tr>
+        <td><a href="../items/142">Maajik Beans</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A pod full of juicy-looking beans</td>
+      </tr>
+      <tr>
+        <td><a href="../items/143">Barley Juice</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A bitter drink, made from barley. Restores SP, raises Luck.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/144">Roast Mutton</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A carefully roasted mutton chop. Restores HP, raises Strength and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/145">Juicy Lamb</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Juicy grilled mutton. Restores HP, raises Strength and Focus</td>
+      </tr>
+      <tr>
+        <td><a href="../items/146">Chicken Delight</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Bird meat in a special spice blend. Restores HP, raises Strength and Dexterity.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/147">Bandit Steak</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Uniquely prepared steak. Restores HP, raises Strength and Vitality</td>
+      </tr>
+      <tr>
+        <td><a href="../items/148">Boiled Egg</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A fresh boiled egg. Restores HP, raises Vitality.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/149">Carrot Soup</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>Carrot soup. Restores HP, raises Dexterity and Focus.</td>
+      </tr>
+      <tr>
+        <td><a href="../items/150">Boiled Veg</a></td>
+        <td><a href="../items/category/Consumable">Consumable</a></td>
+        <td>
+        </td>
+        <td>A simple dish of boiled vegetables. Restores HP, raises Dexterity.</td>
+      </tr>
+  </tbody></table>
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="../item/-2">«</a>
+      </li>
+        <li class="">
+        <a href="../item/1">1</a>
+        </li>
+        <li class="">
+        <a href="../item/2">2</a>
+        </li>
+        <li class="active">
+        <a href="../item/3">3</a>
+        </li>
+        <li class="">
+        <a href="../item/4">4</a>
+        </li>
+        <li class="">
+        <a href="../item/5">5</a>
+        </li>
+      <li class="">
+      <a href="../item/8">»</a>
+      </li>
+    </ul><p></p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <ul class="pagination">
+      <li class="disabled">
+        <a href="../item/1">«</a>
+      </li>
+        <li class="">
+        <a href="../item/1">1</a>
+        </li>
+        <li class="">
+        <a href="../item/2">2</a>
+        </li>
+        <li class="active">
+        <a href="../item/3">3</a>
+        </li>
+        <li class="">
+        <a href="../item/4">4</a>
+        </li>
+        <li class="">
+        <a href="../item/5">5</a>
+        </li>
+      <li class="">
+      <a href="../item/8">»</a>
+      </li>
+    </ul><p></p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+</div>
