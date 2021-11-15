@@ -1,6 +1,6 @@
-# Select the game you are playing.
+##Welcome to Reveria Dive
 
-### [Fantasy Life](https://reveriaexplorer.herokuapp.com)
+### Fantasy Life
 ### Fantasy Life Online
 ### [About](https://reveriadive.github.io/about)
 ### [Archive](https://reveriadive.github.io/locations)
