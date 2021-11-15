@@ -1,5 +1,5 @@
 var viewScripts = document.getElementsByTagName("script");
-viewScripts[0].parentElement.removeChild(node.parentNode);
+viewScripts[0].parentElement.removeChild(viewScripts[0]);
 if (
     ((function (t, e) {
         "object" == typeof module && "object" == typeof module.exports
