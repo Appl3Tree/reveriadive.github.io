@@ -1,3 +1,5 @@
+window.onload = function () {
+if (localStorage.getItem("hasCodeRunBefore") === null) {
 if (
     ((function (t, e) {
         "object" == typeof module && "object" == typeof module.exports
@@ -7311,3 +7313,6 @@ if (
     function () {}.call(this),
     function () {}.call(this),
     function () {}.call(this);
+	localStorage.setItem("hasCodeRunBefore", true);
+    }
+}
