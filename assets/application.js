@@ -1,9 +1,5 @@
-var something = (function() {
-var executed = false;
-	return function() {
-		if (!executed) {
-		executed = true;
-
+var viewScripts = document.getElementsByTagName("script");
+viewScripts[0].parentElement.removeChild(b[0]);
 if (
     ((function (t, e) {
         "object" == typeof module && "object" == typeof module.exports
@@ -7317,6 +7313,3 @@ if (
     function () {}.call(this),
     function () {}.call(this),
     function () {}.call(this);
-        }
-    };
-})();
