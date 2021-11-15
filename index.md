@@ -1,5 +1,4 @@
-##Welcome to Reveria Dive
-
+## Welcome to Reveria Dive
 ### Fantasy Life
 ### Fantasy Life Online
 ### [About](https://reveriadive.github.io/about)
