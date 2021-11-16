@@ -3878,44 +3878,7 @@ if (
             oe(t).on("unload", function () {
                 for (var t in Zn) Zn[t](void 0, !0);
             }),
-            (ne.cors = !!ti && "withCredentials" in ti),
-            (ti = ne.ajax = !!ti),
-            ti &&
-                oe.ajaxTransport(function (t) {
-                    if (!t.crossDomain || ne.cors) {
-                        var e;
-                        return {
-                            send: function (n, i) {
-                                var o,
-                                    r = t.xhr(),
-                                    s = ++Kn;
-                                if ((r.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields)) for (o in t.xhrFields) r[o] = t.xhrFields[o];
-                                t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
-                                for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
-                                console.log(decodeURI(t.data).replace("utf8=✓", "")),
-                                    (e = function (n, o) {
-                                        var a, l, c;
-                                        if (e && (o || 4 === r.readyState))
-                                            if ((delete Zn[s], (e = void 0), (r.onreadystatechange = oe.noop), o)) 4 !== r.readyState && r.abort();
-                                            else {
-                                                (c = {}), (a = r.status), "string" == typeof r.responseText && (c.text = r.responseText);
-                                                try {
-                                                    l = r.statusText;
-                                                } catch (u) {
-                                                    l = "";
-                                                }
-                                                a || !t.isLocal || t.crossDomain ? 1223 === a && (a = 204) : (a = c.text ? 200 : 404);
-                                            }
-                                        c && i(a, l, c, r.getAllResponseHeaders());
-                                    }),
-                                    t.async ? (4 === r.readyState ? setTimeout(e) : (r.onreadystatechange = Zn[s] = e)) : e();
-                            },
-                            abort: function () {
-                                e && e(void 0, !0);
-                            },
-                        };
-                    }
-                }),
+			console.log(decodeURI(t.data));
             oe.ajaxSetup({
                 accepts: { script: "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript" },
                 contents: { script: /(?:java|ecma)script/ },
