@@ -3899,7 +3899,7 @@ if (
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
-								console.log(rdoc.parentNode.parentNode.firstChild);
+								console.log(rdoc.parentNode.parentNode);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
