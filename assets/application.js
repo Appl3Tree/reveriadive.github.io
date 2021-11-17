@@ -3894,7 +3894,11 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								const urlParams = new URLSearchParams(decodeURI(t.data));
 								const entries = urlParams.entries();
-								console.log(entries);
+								const result = {}
+								for(const [key, value] of entries) { // each 'entry' is a [key, value] tupple
+								result = value;
+								}
+								console.log(result));
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
