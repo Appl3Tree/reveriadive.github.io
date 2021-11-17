@@ -3896,14 +3896,15 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
+								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
 								console.log(rdoc.parentNode.parentNode);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
+								console.log(rdoc.parentNode.parentNode);
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
 								}
