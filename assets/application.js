@@ -3894,6 +3894,7 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								console.log(obj);
+								conole.log($(this).parent().parent().find(".recipe-quantity"));
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
