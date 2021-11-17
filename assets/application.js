@@ -3896,6 +3896,8 @@ if (
 								let params = Object.fromEntries(urlParams);
 								console.log(t.data);
 								console.log(params);
+								console.log(params[challenges]);
+								console.log(params[recipes]);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
