@@ -3895,7 +3895,7 @@ if (
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								for (const object in Object.keys(obj)) {
 								console.log(object);
-								console.log(obj[object])
+								console.log(Object.values(obj)[object])
 								}
                                     (e = function (n, o) {
                                         var a, l, c;
