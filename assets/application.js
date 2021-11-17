@@ -3899,12 +3899,12 @@ if (
 								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								console.log(rdoc.parentNode.parentNode);
+								console.log(rdoc.parentNode.innerHTML);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
-								console.log(rdoc.parentNode.parentNode);
+								console.log(rdoc.parentNode.innerHTML);
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
 								}
