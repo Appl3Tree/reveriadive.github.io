@@ -3892,13 +3892,8 @@ if (
                                 if ((r.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields)) for (o in t.xhrFields) r[o] = t.xhrFields[o];
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
-								const urlParams = new URLSearchParams(decodeURI(t.data));
-								const entries = urlParams.entries();
-								const result = {}
-								for(const [key, value] of entries) { // each 'entry' is a [key, value] tupple
-								result = value;
-								}
-								console.log(result);
+								var obj = [...new URLSearchParams(decodeURI(t.data))].reduce((o, i) => ({ ...o, [i[0]] = i[1] }), {});
+								console.log(obj);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
