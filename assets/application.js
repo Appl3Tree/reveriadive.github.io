@@ -3894,8 +3894,15 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								for (const object in Object.keys(obj)) {
-								console.log(Object.keys(obj)[object]);
-								console.log(Object.values(obj)[object])
+								let key = Object.keys(obj)[object];
+								let value = Object.values(obj)[object]
+								if (key.substr(0,6) === "recipes") {
+								console.log("Recipes " + key.substr(0,6))	
+								}
+								else
+								{
+								console.log("Challenges" + key.substr(0,9))	
+								}
 								}
                                     (e = function (n, o) {
                                         var a, l, c;
