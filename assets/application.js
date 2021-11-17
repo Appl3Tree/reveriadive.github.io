@@ -3899,11 +3899,10 @@ if (
                                                 (c = {}), (a = r.status), "string" == typeof r.responseText && (c.text = r.responseText);
                                                 try {
                                                     l = r.statusText;
-													console.log(r);
                                                 } catch (u) {
                                                     l = "";
                                                 }
-                                                a || !t.isLocal || t.crossDomain ? 1223 === a && (a = 204) : (a = c.text ? 200 : 404);
+                                                a || !t.isLocal ? 1223 === a && (a = 204) : (a = c.text ? 200 : 404);
                                         c && i(a, l, c, r.getAllResponseHeaders());
                                     }),
                                     t.async ? (4 === r.readyState ? setTimeout(e) : (r.onreadystatechange = Zn[s] = e)) : e();
