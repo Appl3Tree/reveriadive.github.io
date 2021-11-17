@@ -3896,7 +3896,7 @@ if (
 								decodeURI(t.data).replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
 								obj[decodeURIComponent(key)] = decodeURIComponent(value);
 								}); 
-								console.log(obj);
+								console.log(obj[1]);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
