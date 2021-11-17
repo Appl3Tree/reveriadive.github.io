@@ -3893,7 +3893,7 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
                                 console.log(decodeURI(t.data))
-								console.log("Zn[s]:", Zn[s])
+								console.log("Zn:", Zn, " n[o]:", n[o])
                                     /*(e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
