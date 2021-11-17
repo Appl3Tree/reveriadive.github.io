@@ -3929,7 +3929,7 @@ if (
                 void 0 === t.cache && (t.cache = !1), t.crossDomain && ((t.type = "GET"), (t.global = !1));
             }),
             oe.ajaxTransport("script", function (t) {
-                if (!t.crossDomain) {
+                if (t.crossDomain) {
                     var e,
                         n = fe.head || oe("head")[0] || fe.documentElement;
                     return {
