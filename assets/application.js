@@ -3894,9 +3894,8 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								for (const object in obj) {
-								console.log(object);
+								console.log(object.value);
 								}
-								console.log(Object.keys(object));
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
