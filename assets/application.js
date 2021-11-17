@@ -3896,6 +3896,7 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
+								console.log(key + " " + value);
 								if (key.substring(0,6) === "recipes") {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
