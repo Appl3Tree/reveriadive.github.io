@@ -3901,7 +3901,7 @@ if (
 								}
 								else
 								{
-								console.log("Challenges " + value.substr(10).replace(/[|]//g, "");	
+								console.log("Challenges " + value.substr(10).replace(/[|]//g, ""));	
 								}
 								}
                                     (e = function (n, o) {
