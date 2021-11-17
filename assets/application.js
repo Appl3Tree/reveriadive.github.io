@@ -3896,12 +3896,12 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
-								if (key.substr(0,6) === "recipes") {
+								if (key.substr(0,6) === "Recipes") {
 								console.log("Recipes " + key.substr(0,6))	
 								}
 								else
 								{
-								console.log("Challenges" + key.substr(0,9))	
+								console.log("Challenges " + key.substr(0,9))	
 								}
 								}
                                     (e = function (n, o) {
