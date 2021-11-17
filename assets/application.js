@@ -3892,8 +3892,9 @@ if (
                                 if ((r.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields)) for (o in t.xhrFields) r[o] = t.xhrFields[o];
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
+								let remainder = []
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
-								console.log(Object.keys(obj));
+								Object.keys(obj).forEach((element,index) => remainder[index] = element);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
