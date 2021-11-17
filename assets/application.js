@@ -3878,7 +3878,7 @@ if (
             oe(t).on("unload", function () {
                 for (var t in Zn) Zn[t](void 0, !0);
             }),
-			console.log(decodeURI(t.data));
+			console.log(decodeURI(t));
             oe.ajaxSetup({
                 accepts: { script: "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript" },
                 contents: { script: /(?:java|ecma)script/ },
