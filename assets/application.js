@@ -3892,7 +3892,7 @@ if (
                                 if ((r.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields)) for (o in t.xhrFields) r[o] = t.xhrFields[o];
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
-                                console.log(decodeURI(t.data)),
+                                console.log(decodeURI(t.data))
 								console.log("Zn[s]:", Zn[s])
                                     /*(e = function (n, o) {
                                         var a, l, c;
