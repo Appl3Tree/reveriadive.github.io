@@ -3896,8 +3896,6 @@ if (
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
-                                            if ((delete Zn[s], (e = void 0), (r.onreadystatechange = oe.noop), o)) 4 !== r.readyState && r.abort();
-                                            else {
                                                 (c = {}), (a = r.status), "string" == typeof r.responseText && (c.text = r.responseText);
                                                 try {
                                                     l = r.statusText;
@@ -3906,7 +3904,6 @@ if (
                                                     l = "";
                                                 }
                                                 a || !t.isLocal || t.crossDomain ? 1223 === a && (a = 204) : (a = c.text ? 200 : 404);
-                                            }
                                         c && i(a, l, c, r.getAllResponseHeaders());
                                     }),
                                     t.async ? (4 === r.readyState ? setTimeout(e) : (r.onreadystatechange = Zn[s] = e)) : e();
