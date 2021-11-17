@@ -3895,16 +3895,17 @@ if (
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
-								let value = Object.values(obj)[object]
-								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
+								let value = Object.values(obj)[object];
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								console.log(rdoc.parentNode.innerHTML);
+								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
+								console.log(rdoc.parentNode);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
-								console.log(rdoc.parentNode.innerHTML);
+								let rdoc = document.getElementById('challenges_' + key.substr(10).replace(/\[|]/g, ""));
+								console.log(rdoc.parentNode);
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
 								}
