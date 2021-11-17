@@ -3894,7 +3894,7 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let remainder = []
 								for (const [key, value] of Object.entries(new URLSearchParams(t.data))) {
-								remainder[Object.keys(value).indexOf(key)] = value; 	
+								remainder[key] = value; 	
 								}
 								console.log(remainder);
                                     (e = function (n, o) {
