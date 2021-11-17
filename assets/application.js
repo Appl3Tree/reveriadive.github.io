@@ -3897,7 +3897,7 @@ if (
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
-								if (key.contains("recipes")) {
+								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
