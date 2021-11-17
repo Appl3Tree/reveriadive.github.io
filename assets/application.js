@@ -3894,10 +3894,7 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let urlParams = new URLSearchParams(decodeURI(t.data));
 								let params = Object.fromEntries(urlParams);
-								console.log(t.data);
 								console.log(params);
-								console.log(params[challenges]);
-								console.log(params[recipes]);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
