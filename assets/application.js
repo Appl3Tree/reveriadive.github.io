@@ -3897,11 +3897,11 @@ if (
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
 								if (key.substr(0,6) === "recipes") {
-								console.log("Recipes " + key.substr(7).replace(/[|]//g, ""));
+								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
-								console.log("Challenges " + key.substr(10).replace(/[|]//g, ""));	
+								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
 								}
                                     (e = function (n, o) {
