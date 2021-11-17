@@ -3893,7 +3893,10 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
-								console.log(Object.keys(obj));
+								for (const object in obj) {
+								console.log(object);
+								}
+								console.log(Object.keys(object));
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
