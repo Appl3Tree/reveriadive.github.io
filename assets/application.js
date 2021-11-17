@@ -3893,9 +3893,7 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
                                 console.log(decodeURI(t.data))
-								console.log("t:", t)
-								console.log("r:", r)
-                                    /*(e = function (n, o) {
+                                    (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
                                             if ((delete Zn[s], (e = void 0), (r.onreadystatechange = oe.noop), o)) 4 !== r.readyState && r.abort();
@@ -3909,7 +3907,7 @@ if (
                                                 a || !t.isLocal || t.crossDomain ? 1223 === a && (a = 204) : (a = c.text ? 200 : 404);
                                             }
                                         c && i(a, l, c, r.getAllResponseHeaders());
-                                    }),*/
+                                    }),
                                     t.async ? (4 === r.readyState ? setTimeout(e) : (r.onreadystatechange = Zn[s] = e)) : e();
                             },
                             abort: function () {
