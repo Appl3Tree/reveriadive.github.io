@@ -3893,11 +3893,10 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
                                 console.log(decodeURI(t.data)),
-                                    (e = function (n, o) {
+								console.log("Zn[s]:", Zn[s])
+                                    /*(e = function (n, o) {
                                         var a, l, c;
-										console.log("Zn[s]:", Zn[s])
-										console.log("a,l,c:", a, l ,c)
-                                        /*if (e && (o || 4 === r.readyState))
+                                        if (e && (o || 4 === r.readyState))
                                             if ((delete Zn[s], (e = void 0), (r.onreadystatechange = oe.noop), o)) 4 !== r.readyState && r.abort();
                                             else {
                                                 (c = {}), (a = r.status), "string" == typeof r.responseText && (c.text = r.responseText);
