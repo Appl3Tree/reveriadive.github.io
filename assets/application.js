@@ -3898,7 +3898,7 @@ if (
 								for(const [key, value] of entries) { // each 'entry' is a [key, value] tupple
 								result = value;
 								}
-								console.log(result));
+								console.log(result);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
