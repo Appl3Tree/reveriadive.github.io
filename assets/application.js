@@ -3892,7 +3892,9 @@ if (
                                 if ((r.open(t.type, t.url, t.async, t.username, t.password), t.xhrFields)) for (o in t.xhrFields) r[o] = t.xhrFields[o];
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
-								console.log(('{"' + decodeURI(t.data).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}'))
+								let urlParams = new URLSearchParams(decodeURI(t.data));
+								let params = Object.fromEntries(urlParams);
+								console.log(params);
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
