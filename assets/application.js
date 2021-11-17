@@ -3895,7 +3895,7 @@ if (
 								recipes = [];
 								challenges = [];
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
-								Object.keys(obj).forEach((element, index) => element.push(index) ));
+								Object.keys(obj).forEach((element, index) => element.push(index));
 								console.log(recipes);
 								console.log(challenges);
                                     (e = function (n, o) {
