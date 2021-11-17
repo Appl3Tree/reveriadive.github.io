@@ -3901,6 +3901,7 @@ if (
                                                 (c = {}), (a = r.status), "string" == typeof r.responseText && (c.text = r.responseText);
                                                 try {
                                                     l = r.statusText;
+													console.log(r);
                                                 } catch (u) {
                                                     l = "";
                                                 }
