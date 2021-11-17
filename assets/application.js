@@ -3893,7 +3893,7 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								var obj = {}; 
-								str.replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
+								decodeURI(t.data).replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
 								obj[decodeURIComponent(key)] = decodeURIComponent(value);
 								}); 
 								console.log(obj);
