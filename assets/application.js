@@ -3894,18 +3894,17 @@ if (
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
 								for (const object in Object.keys(obj)) {
-								let test;
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								test = key.substr(7).replace(/\[|]/g);
-								console.log("Recipes " + test);
+								var rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
+								console.log(rdoc);
+								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
-								test = key.substr(10).replace(/\[|]/g, "");
-								console.log("Challenges " + );	
+								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
 								}
                                     (e = function (n, o) {
