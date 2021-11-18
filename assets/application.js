@@ -3893,7 +3893,7 @@ if (
                                 t.mimeType && r.overrideMimeType && r.overrideMimeType(t.mimeType), t.crossDomain || n["X-Requested-With"] || (n["X-Requested-With"] = "XMLHttpRequest");
                                 for (o in n) void 0 !== n[o] && r.setRequestHeader(o, n[o] + "");
 								let obj = Object.fromEntries(new URLSearchParams(t.data));
-								document.getElementById("itemList").innerHTML = "<h3 align="center">The recipes and challenges for the items will be displayed here.<h3>";
+								document.getElementById("itemList").innerHTML = '<h3 align="center">The recipes and challenges for the items will be displayed here.<h3>';
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
