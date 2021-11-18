@@ -3899,10 +3899,8 @@ if (
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
-								let newTD = document.createElement('div');
-								newTD.class = "panel-body"
-								newTD.firstChild.innerHTML = newTD.firstChild.innerHTML + " " + key + " : " + value;
-								document.getElementById("itemList").appendChild(newTD);
+								let newTD = document.getElementById("itemList");
+								newTD.insertAjacentHTML('afterend', "<div>" + key + " : " + value + "</div>");
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
