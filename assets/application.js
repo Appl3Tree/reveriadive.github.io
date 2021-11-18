@@ -3899,6 +3899,7 @@ if (
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
+								console.log(t.document.getElementById("itemList"))
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
