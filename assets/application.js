@@ -3898,8 +3898,9 @@ if (
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								let rec = document.getElementById('recipes_' + value);
-								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
+								let test = key.substr(7).replace(/\[|]/g);
+								let rec = document.getElementById('recipes_' + test);
+								console.log("Recipes " + test));
 								console.log(rec);
 								}
 								else
