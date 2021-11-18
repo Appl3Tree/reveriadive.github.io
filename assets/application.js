@@ -3898,7 +3898,7 @@ if (
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								console.log(Zn[s]);
+								console.log(Zn);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else {
