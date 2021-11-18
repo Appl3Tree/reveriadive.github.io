@@ -3901,7 +3901,7 @@ if (
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								let newTD = document.createElement('div');
 								newTD.class = "panel-body"
-								newTD.firstChild.innerHTML = newTD.innerHTML + " " + key + " : " + value;
+								newTD.firstChild.innerHTML = (newTD.firstChild.innerHTML + " " + key + " : " + value);
 								document.getElementById("itemList").appendChild(newTD);
 								}
 								else {
