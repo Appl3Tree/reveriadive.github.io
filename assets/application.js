@@ -3900,7 +3900,7 @@ if (
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
-								if (value === "1")
+								if (parseInt(value) >= 1)
 								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML}<div class="panel-body">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} : ${value}</div>`;
 								}
 								else {
