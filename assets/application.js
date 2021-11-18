@@ -3899,13 +3899,13 @@ if (
 								let rdoc;
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
+								let rdoc = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/g, ""));
 								console.log(rdoc);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
 								else
 								{
-								rdoc = document.getElementById('challenges_' + key.substr(10).replace(/\[|]/g, ""));
+								let cdoc = document.getElementById('challenges_' + key.substr(10).replace(/\[|]/g, ""));
 								console.log(rdoc);
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
 								}
