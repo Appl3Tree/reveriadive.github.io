@@ -3898,7 +3898,7 @@ if (
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								let rec = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/gmi, "").parentNode);
+								let rec = document.getElementById('recipes_' + key.substr(7).replace(/\[|]/gmi, ""));
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								console.log(rec);
 								}
