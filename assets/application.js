@@ -3902,9 +3902,8 @@ if (
 								console.log(rdoc);
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								}
-								else
-								{
-								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));	
+								else {
+								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
 								}
 								}
                                     (e = function (n, o) {
