@@ -3901,6 +3901,10 @@ if (
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								let newTD = document.getElementById("itemList");
 								newTD.insertAfter(newTD, newTD.firstChild.nextSibling) = newTD.innerHTML + " " + key + " : " + value;
+								let newTD = document.createElement('div');
+								newTD.class = "panel-body"
+								newTD.firstChild.innerHTML = (newTD.firstChild.innerHTML + " " + key + " : " + value);
+								document.getElementById("itemList").appendChild(newTD);
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
