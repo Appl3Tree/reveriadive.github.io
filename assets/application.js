@@ -3900,7 +3900,7 @@ if (
 								if (key.includes("recipes")) {
 								let test = key.substr(7).replace(/\[|]/g);
 								let rec = document.getElementByName(key)[0];
-								console.log("Recipes " + test));
+								console.log("Recipes " + test);
 								console.log(rec);
 								}
 								else
