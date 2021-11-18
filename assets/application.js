@@ -3900,9 +3900,7 @@ if (
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								let newTD = document.getElementById("itemList").createElement('div');
-								newTD.class = "panel-body";
 								newTD.innerHTML = newTD.innerHTML + " " + key + " : " + value;
-								document.getElementById("itemList").appendChild(newTD);
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
