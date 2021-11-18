@@ -3901,7 +3901,8 @@ if (
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								if (parseInt(value) >= 1)
-								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML}<div class="panel-body">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} : ${value}</div>`;
+								let testNode = document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, ""));
+								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML}<div class="panel-body"><a href="${testNode.innerHTML.match(/href="([^"]*)/)[1]}">${testNode.parentNode.parentNode.children[0].innerText} : ${value}<\a></div>`;
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
