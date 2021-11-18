@@ -3899,7 +3899,7 @@ if (
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
-								document.getElementById("itemList").innerHTML = '<div id="itemList" class="panel-collapse collapse" style="height: 0px;"><div class="panel-body">${key} : ${value}</div></div>';
+								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML}<div class="panel-body">${key} : ${value}</div>`;
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
