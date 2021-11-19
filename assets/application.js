@@ -3900,9 +3900,10 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
+								let recipeinfo = document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText;
 								if (key.includes("recipes")) {
-								console.log("Recipe " + key.substr(7).replace(/\[|]/g, "") + " | " + recipes[document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText]);
-								console.log(`${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log("Recipe " + key.substr(7).replace(/\[|]/g, "") + " | " + recipes[recipeInfo][0] + "\r\n" + recipes[recipeInfo][1]);
+								console.log(`${recipeInfo`});
 								if (parseInt(value) >= 1)
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 								}
