@@ -3899,9 +3899,9 @@ if (
 								document.getElementById("itemList").innerHTML = '<h3 align="center">The recipes and challenges for the items will be displayed here.<h3>';
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
-								let value = Object.values(obj)[object]
+								let value = Object.values(obj)[object];
 								if (key.includes("recipes")) {
-								let recipeinfo = document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText;
+								let recipeinfo = `${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`;
 								console.log("Recipe " + key.substr(7).replace(/\[|]/g, "") + " | " + recipes[recipeInfo][0]);
 								console.log(recipes[recipeInfo][1]);
 								console.log(`${recipeInfo}`);
