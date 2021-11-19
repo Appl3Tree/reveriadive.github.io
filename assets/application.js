@@ -3903,7 +3903,7 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
-								console.log(items[key.substr(7).replace(/\[|]/g, "")]);
+								console.log(items[key.substr(7).replace(/\[|]/g, "") - 1]);
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
 								//console.log(items[x]);
