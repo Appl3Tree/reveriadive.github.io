@@ -3903,12 +3903,8 @@ if (
 								for (const object in Object.keys(obj)) {
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object]
-								switch (x) {
-									case items[key.substr(7).replace(/\[|]/g, "")]:
-								console.log(x);
-								default:
+								console.log(items[key.substr(7).replace(/\[|]/g, "")]);
 								console.log(key + " " + value);
-								}
 								if (key.includes("recipes")) {
 								//console.log(items[x]);
 								//console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
