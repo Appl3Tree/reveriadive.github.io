@@ -1,6 +1,5 @@
 window.onload = function () {
 if (localStorage.getItem("hasCodeRunBefore") === null) {
-var recipe_blacksmith = require('recipes_blacksmith')
 if (
     ((function (t, e) {
         "object" == typeof module && "object" == typeof module.exports
