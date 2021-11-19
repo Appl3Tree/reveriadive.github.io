@@ -3904,6 +3904,7 @@ if (
 								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML}<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 								}
 								else {
+								document.getElementById("itemList").innerHTML = `${document.getElementById("itemList").innerHTML<a href="${document.getElementById("challenges_" + key.substr(10).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("challenges_" + key.substr(10).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>}`
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
 								}
 								}
