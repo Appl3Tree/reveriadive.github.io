@@ -12,8 +12,19 @@ if (!isNaN(x))
 console.log('"' + document.querySelector("#CookFruit > p > table > tbody").children[x].children[0].textContent + '"' + ' : { "' + document.querySelector("#CookFruit > p > table > tbody").children[x].children[1].textContent + '" }, ');
 }
 
-
 let x; for (x in document.querySelector("#CookFruit > p > table > tbody").children) {
 if (!isNaN(x))
 console.log('"' + document.querySelector("#CookFruit > p > table > tbody").children[x].children[0].textContent + '"' + ' : { "' + document.querySelector("#CookFruit > p > table > tbody").children[x].children[1].textContent + '", "' + document.querySelector("#CookFruit > p > table > tbody").children[x].children[3].textContent.replace(/\s+/g,' ').trim() + '" }, ');
+}
+for (x in document.querySelector("#CookEgg > p > table > tbody").children) {
+if (!isNaN(x))
+console.log(' "' + document.querySelector("#CookEgg > p > table > tbody").children[x].children[0].textContent + '"' + ' : { "' + document.querySelector("#CookEgg > p > table > tbody").children[x].children[1].textContent + '", "' + document.querySelector("#CookEgg > p > table > tbody").children[x].children[3].textContent.replace(/\s+/g,' ').trim() + '" }, ');
+}
+for (x in document.querySelector("#CookMeat > p > table > tbody").children) {
+if (!isNaN(x))
+console.log(' "' + document.querySelector("#CookMeat > p > table > tbody").children[x].children[0].textContent + '"' + ' : { "' + document.querySelector("#CookMeat > p > table > tbody").children[x].children[1].textContent + '", "' + document.querySelector("#CookMeat > p > table > tbody").children[x].children[3].textContent.replace(/\s+/g,' ').trim() + '" }, ');
+}
+for (x in document.querySelector("#CookSeafood > p > table > tbody").children) {
+if (!isNaN(x))
+console.log(' "' + document.querySelector("#CookSeafood > p > table > tbody").children[x].children[0].textContent + '"' + ' : { "' + document.querySelector("#CookSeafood > p > table > tbody").children[x].children[1].textContent + '", "' + document.querySelector("#CookSeafood > p > table > tbody").children[x].children[3].textContent.replace(/\s+/g,' ').trim() + '" }, ');
 }
