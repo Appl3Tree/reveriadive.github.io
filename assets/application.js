@@ -3900,7 +3900,7 @@ if (
 								let value = Object.values(obj)[object]
 								console.log(key + " " + value);
 								if (key.includes("recipes")) {
-								console.log(items[1] + " " + items[2])
+								console.log(items[object])
 								console.log("Recipes " + key.substr(7).replace(/\[|]/g, ""));
 								if (parseInt(value) >= 1)
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
