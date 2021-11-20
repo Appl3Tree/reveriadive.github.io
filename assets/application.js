@@ -3903,11 +3903,11 @@ if (
 									if (parseInt(value) >= 1) {
 								let item = key.substr(7).replace(/\[|]/g, "");
 								switch (item) {
-								case: (item <= 91):
+								case (item <= 91):
 								console.log("1 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
 								console.log(`2 ${Object.values(recipes)[item - 1][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`2 ${Object.values(recipes)[item - 1][1]}`);
-								case: (item >= 589)
+								case (item >= 589):
 								console.log("3 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
 								console.log(`4 ${Object.values(recipes)[item - 1][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`4 ${Object.values(recipes)[item - 1][1]}`);
