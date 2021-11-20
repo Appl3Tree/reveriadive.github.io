@@ -3901,8 +3901,9 @@ if (
 								let value = Object.values(obj)[object];
 								if (key.includes("recipes")) {
 									if (parseInt(value) >= 1) {
-								console.log("Recipe " + (key.substr(7).replace(/\[|]/g, "") - 91) + " | ");
-								console.log(`${Object.values(recipes)[(key.substr(7).replace(/\[|]/g, "") - 91)][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								let item = (key.substr(7).replace(/\[|]/g, "") - 91);
+								console.log("Recipe " + item + " | ");
+								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
