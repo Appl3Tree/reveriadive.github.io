@@ -3913,7 +3913,7 @@ if (
 								console.log(`${Object.values(recipes)[item - 1][1]}`);
 								}
 								else {
-								item += 499;
+								item += 498;
 								console.log("Recipe " + item);
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`${Object.values(recipes)[item][1]}`);	
