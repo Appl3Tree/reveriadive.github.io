@@ -3904,11 +3904,10 @@ if (
 								let item = key.substr(7).replace(/\[|]/g, "");
 								if (item >= 92) {
 								console.log("1 Recipe " + item + " | " + (Object.values(recipes)[item - 91][0]));
-								console.log(`1 ${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`2 ${Object.values(recipes)[item][1]}`);
+								console.log(`1 ${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log(`2 ${Object.values(recipes)[item - 91][1]}`);
 								}
-								else
-								{
+								else {
 								console.log("3 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
 								console.log(`3 ${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`4 ${Object.values(recipes)[item - 91][1]}`);
