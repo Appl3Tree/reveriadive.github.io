@@ -3901,8 +3901,8 @@ if (
 								let value = Object.values(obj)[object];
 								if (key.includes("recipes")) {
 									if (parseInt(value) >= 1) {
-								console.log("Recipe " + key.substr(7).replace(/\[|]/g, "") + " | ");
-								console.log(`${Object.values(recipes)[key.substr(7).replace(/\[|]/g, "").parentNode.parentNode.children[0].innerText][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log("Recipe " + key.substr(7).replace(/\[|]/g, "") + " | " + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]);
+								console.log(`${Object.values(recipes)[key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
