@@ -3910,7 +3910,7 @@ if (
 								else {
 								console.log("3 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
 								console.log(`3 ${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`4 ${Object.values(recipes)[item][1]}`);
+								console.log(`4 ${Object.values(recipes)[item + 91][1]}`);
 								}
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
