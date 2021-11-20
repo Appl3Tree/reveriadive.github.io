@@ -3904,8 +3904,8 @@ if (
 								let item = Number(key.substr(7).replace(/\[|]/g, ""));
 								if (item >= 91 && item <= 588) {
 								console.log("Recipe " + (item - 91) + " | " + (Object.values(recipes)[item - 91][0]));
-								console.log(`1 ${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`2 ${Object.values(recipes)[item - 91][1]}`);
+								console.log(`${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log(`${Object.values(recipes)[item - 91][1]}`);
 								}
 								else if (item >= 589) {
 								console.log("Recipe " + (item - 1) + " | " + (Object.values(recipes)[item - 1][0]));
