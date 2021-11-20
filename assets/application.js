@@ -3902,10 +3902,8 @@ if (
 								if (key.includes("recipes")) {
 									if (parseInt(value) >= 1) {
 								let item = (key.substr(7).replace(/\[|]/g, "") - 91);
-								if (item < 0) {
+								if (item < 0)
 								item += 91;
-								console.log("Recipe " + item + " | " document.getElementById("recipes_" + item).parentNode.parentNode.children[0].innerText + " | " + Object.values(recipes)[item][1]);
-								}
 								else {
 								console.log("Recipe " + item + " | ");
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + item).parentNode.parentNode.children[0].innerText}`);
