@@ -3902,16 +3902,16 @@ if (
 								if (key.includes("recipes")) {
 									if (parseInt(value) >= 1) {
 								let item = key.substr(7).replace(/\[|]/g, "");
-								if (item <= 90) {
-								console.log("Recipe " + item + " | " + (Object.values(recipes)[item][0]));
-								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								if (item >= 91) {
+								console.log("Recipe " + item + " | " + (Object.values(recipes)[item - 91][0]));
+								console.log(`${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								}
 								else
 								{
-								console.log("Recipe " + item + " | " + recipes[document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText][0]);
-								console.log(`${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
+								console.log("Recipe " + item + " | " + (Object.values(recipes)[item][0]));
+								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								}
+								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
 								else {
