@@ -3903,19 +3903,19 @@ if (
 									if (parseInt(value) >= 1) {
 								let item = key.substr(7).replace(/\[|]/g, "");
 								if (item >= 91 && item <= 588) {
-								console.log("1 Recipe " + item + " | " + (Object.values(recipes)[item - 91][0]));
+								console.log("1 Recipe " + (item - 91) + " | " + (Object.values(recipes)[item - 91][0]));
 								console.log(`1 ${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`2 ${Object.values(recipes)[item - 91][1]}`);
 								}
 								else if (item >= 589) {
-								console.log("3 Recipe " + item + " | " + (Object.values(recipes)[item - 1][0]));
+								console.log("3 Recipe " + (item - 1) + " | " + (Object.values(recipes)[item - 1][0]));
 								console.log(`3 ${Object.values(recipes)[item - 1][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`4 ${Object.values(recipes)[item - 1][1]}`);
 								}
 								else {
-								console.log("5 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
-								console.log(`5 ${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`6 ${Object.values(recipes)[item][1]}`);	
+								console.log("5 Recipe " + (item + 676) + " | " + (Object.values(recipes)[item][0]));
+								console.log(`5 ${Object.values(recipes)[item + 676][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log(`6 ${Object.values(recipes)[item + 676][1]}`);	
 								}
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
