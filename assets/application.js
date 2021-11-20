@@ -3902,8 +3902,8 @@ if (
 								if (key.includes("recipes")) {
 									if (parseInt(value) >= 1) {
 								let item = (key.substr(7).replace(/\[|]/g, "") - 91);
-								if (item <= 0)
-								item += 91;
+								if (item >= 848)
+								item -= 91;
 								console.log("Recipe " + item + " | ");
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
