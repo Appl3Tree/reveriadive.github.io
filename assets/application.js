@@ -3913,7 +3913,7 @@ if (
 								console.log(`4 ${Object.values(recipes)[item - 1][1]}`);
 								}
 								else {
-								console.log("5 Recipe " + (499 + item) + " | " + (Object.values(recipes)[(598 + item)][0]));
+								console.log("5 Recipe " + (499 + item) + " | " + (Object.values(recipes)[(499 + item)][0]));
 								console.log(`5 ${Object.values(recipes)[499 + item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`6 ${Object.values(recipes)[499 + item][1]}`);	
 								}
