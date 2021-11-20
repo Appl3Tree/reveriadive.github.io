@@ -3914,8 +3914,7 @@ if (
 								}
 								else {
 								console.log(item);
-								item += 499;
-								console.log("5 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
+								console.log(`5 Recipe ${[item + 499]} | ${Object.values(recipes)[item][0]}`);
 								console.log(`5 ${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`6 ${Object.values(recipes)[item][1]}`);	
 								}
