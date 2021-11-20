@@ -3902,22 +3902,15 @@ if (
 								if (key.includes("recipes")) {
 								if (parseInt(value)) {
 								let item = Number(key.substr(7).replace(/\[|]/g, ""));
-								if (item >= 91 && item <= 588) {
-								console.log("Recipe " + (item - 91) + " | " + (Object.values(recipes)[item - 91][0]));
-								console.log(`${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`${Object.values(recipes)[item - 91][1]}`);
-								}
-								else if (item >= 589) {
-								console.log("Recipe " + (item - 1) + " | " + (Object.values(recipes)[item - 1][0]));
-								console.log(`${Object.values(recipes)[item - 1][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`${Object.values(recipes)[item - 1][1]}`);
-								}
-								else {
+								if (item >= 91 && item <= 588)
+								item -= 91;
+								else if (item >= 589)
+								item -= 1;
+								else
 								item += 498;
 								console.log("Recipe " + item);
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`${Object.values(recipes)[item][1]}`);	
-								}
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
