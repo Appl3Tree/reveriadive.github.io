@@ -3914,7 +3914,7 @@ if (
 								}
 								else {
 								console.log("5 Recipe " + (499 + item) + " | " + (Object.values(recipes)[(598 + item)][0]));
-								console.log(`5 ${Object.values(recipes)[499 + item)[0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log(`5 ${Object.values(recipes)[499 + item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`6 ${Object.values(recipes)[499 + item][1]}`);	
 								}
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
