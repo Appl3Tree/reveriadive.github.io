@@ -3914,9 +3914,9 @@ if (
 								}
 								else {
 								console.log(item);
-								console.log(`5 Recipe [` + item + 499 + `] | ${Object.values(recipes)[item][0]}`);
-								console.log(`5 ${Object.values(recipes)[` + item + 499 + `][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
-								console.log(`6 ${Object.values(recipes)[` + item + 499 + `][1]}`);	
+								console.log(`5 Recipe ${Object.values(recipes)[${item + 499}] | ${Object.values(recipes)[item][0]}`);
+								console.log(`5 ${Object.values(recipes)[${item + 499}][0] : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
+								console.log(`6 ${Object.values(recipes)[${item + 499}][1]}`);	
 								}
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
