@@ -3900,7 +3900,7 @@ if (
 								let key = Object.keys(obj)[object];
 								let value = Object.values(obj)[object];
 								if (key.includes("recipes")) {
-									if (parseInt(value) >= 1) {
+								if (parseInt(value)) {
 								let item = key.substr(7).replace(/\[|]/g, "");
 								if (item >= 91 && item <= 588) {
 								console.log("1 Recipe " + (item - 91) + " | " + (Object.values(recipes)[item - 91][0]));
@@ -3913,6 +3913,7 @@ if (
 								console.log(`4 ${Object.values(recipes)[item - 1][1]}`);
 								}
 								else {
+								console.log(item);
 								item += 499;
 								console.log("5 Recipe " + item + " | " + (Object.values(recipes)[item][0]));
 								console.log(`5 ${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
