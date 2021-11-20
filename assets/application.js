@@ -3901,7 +3901,7 @@ if (
 								let value = Object.values(obj)[object];
 								if (key.includes("recipes")) {
 								if (parseInt(value)) {
-								let item = key.substr(7).replace(/\[|]/g, "");
+								let item = Number(key.substr(7).replace(/\[|]/g, ""));
 								if (item >= 91 && item <= 588) {
 								console.log("1 Recipe " + (item - 91) + " | " + (Object.values(recipes)[item - 91][0]));
 								console.log(`1 ${Object.values(recipes)[item - 91][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
