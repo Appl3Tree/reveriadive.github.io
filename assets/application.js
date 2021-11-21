@@ -3913,16 +3913,16 @@ if (
 								// console.log(`${Object.values(recipes)[item][1]}`);
 								let item_list = Object.values(recipes)[item][1].substr(4).replace(/ \d [^\w\w+]/ig, ',').split(', ');
 								let item_amount = Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig);
+								document.getElementById("itemList").innerHTML += `<ol>`;
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}</a></div>`;
 								console.log(item_amount);
 								console.log(item_list);
 								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
-								document.getElementById("itemList").innerHTML += `<ol>`;
+								document.getElementById("itemList").innerHTML += `</ol>`;
 								for (const itemrecipe in item_list) {
-								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${item_list[itemrecipe]}</li>`;
+								document.querySelector('#itemlist').appendTo('ol');
 										}
 									}
-								document.getElementById("itemList").innerHTML += `</ol>`;
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
