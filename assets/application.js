@@ -3918,7 +3918,7 @@ if (
 								console.log(item_list);
 								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
 								for (const itemrecipe in item_list) {
-								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${(item_list[itemrecipe] * key.substr(7).replace(/\[|]/g, "").parentNode.parentNode.children[0].innerText)}</li>`
+								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${item_list[itemrecipe]}</li>`
 										}
 									}
 								}
