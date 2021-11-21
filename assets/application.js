@@ -3911,8 +3911,8 @@ if (
 								console.log("Recipe " + item);
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`${Object.values(recipes)[item][1]}`);
-								console.log(`${Object.values(recipes)[item][1].replace(/ \W w*/ig).match(/\d+/ig)}`)
-								console.log(`${Object.values(recipes)[item][1].substr(4).split(/[\d] \W w*/)}`)
+								console.log(`${Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig)}`)
+								console.log(`${Object.values(recipes)[item][1].substr(4).split(/[\d] \W w*/)}.replace(/\s,/, ',')`)
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
