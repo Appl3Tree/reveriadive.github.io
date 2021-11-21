@@ -3917,7 +3917,7 @@ if (
 								console.log(item_amount);
 								console.log(item_list);
 								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
-								var node = document.getElementById("itemList").createElement('ol');
+								var node = document.createElement('ol');
 								for (const itemrecipe in item_list) {
 								var textNode = document.CreateTextNode(`${item_list[itemrecipe]}`);
 								node.appendChild(textNode);
