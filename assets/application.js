@@ -3914,7 +3914,7 @@ if (
 								console.log(`${Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig)}`)
 								let array = Object.values(recipes)[item][1].substr(4).split(/[\d] \W w*/);
 								array = array.map(el => e.trim());
-								console.log(`${array}`);
+								console.log(array);
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
