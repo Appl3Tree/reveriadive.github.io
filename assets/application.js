@@ -3917,9 +3917,11 @@ if (
 								console.log(item_amount);
 								console.log(item_list);
 								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
-								let test = document.getElementById("itemList").createElement('ol');
+								var node = document.getElementById("itemList").createElement('ol');
 								for (const itemrecipe in item_list) {
-								test.appendChild(`<li style="list-style-type:disc">${item_list[itemrecipe]}</li>`);
+								var textNode = document.CreateTextNode(`${item_list[itemrecipe]}`);
+								node.appendChild(textNode);
+								document.getElementById("itemList").appendChild(node);
 										}
 									}
 								}
