@@ -3915,7 +3915,8 @@ if (
 								let item_amount = Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig);
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} ${item_amount[value]}</a></div>`;
 								for (const itemrecipe in item_list[0]) {
-								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${item_amount[itemrecipe]}</li>`
+								if (item_list[0] !== undefined)
+								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${item_amount[itemrecipe] * key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}</li>`
 										}
 									}
 								}
