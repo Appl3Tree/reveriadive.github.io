@@ -3921,8 +3921,8 @@ if (
 								for (const itemrecipe in item_list) {
 								document.getElementById("itemList").innerHTML += `<li style="list-style-type:disc">${item_list[itemrecipe]}</li>`;
 										}
-								document.getElementById("itemList").innerHTML += `</ol>`;
 									}
+								document.getElementById("itemList").innerHTML += `</ol>`;
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
