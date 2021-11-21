@@ -3912,7 +3912,7 @@ if (
 								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								console.log(`${Object.values(recipes)[item][1]}`);
 								console.log(`${Object.values(recipes)[item][1].replace(/ \W w*/ig).match(/\d+/ig)}`)
-								console.log(`${Object.values(recipes)[item][1].trim().split(/[\d] \W w*/).ToList()}`)
+								console.log(`${Object.values(recipes)[item][1].trim().split(/[\d] \W w*/)}`)
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText} x${value}</a></div>`;
 									}
 								}
