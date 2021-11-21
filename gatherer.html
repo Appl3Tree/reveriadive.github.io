@@ -5,17 +5,6 @@
   <script>
 	localStorage.removeItem('hasCodeRunBefore');
   </script>
-  <script type='text/javascript'>
-  $(window).load(function(){
-    $( document ).ready(function() {
-        $('li').each(function(i) {
-            $(this).click(function() {
-                $(this).toggleClass('crossOut');
-            });
-        });
-    });
-  });
-  </script>
   <script data-turbolinks-track="false" src="./assets/application.js"></script>
   <meta content="authenticity_token" name="csrf-param">
   <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
@@ -96,7 +85,7 @@
   <form accept-charset="UTF-8" action="/gatherer" data-remote="true" id="challengesForm" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div></form>  
   <form accept-charset="UTF-8" action="/gatherer" method="post">
   <div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q="></div>    
-  <div class="panel-group" id="accordion">
+  <div class="panel-group" id="accordion" style="display:none">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
