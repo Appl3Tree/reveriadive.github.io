@@ -3926,10 +3926,10 @@ if (
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
 								}
+								}
 								const matches = document.querySelectorAll("panel-body");
 								const previous = matches[0].previousElementSibling
 								console.log(previous);
-								}
                                     (e = function (n, o) {
                                         var a, l, c;
                                         if (e && (o || 4 === r.readyState))
