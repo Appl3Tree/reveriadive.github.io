@@ -3919,7 +3919,7 @@ if (
 								//console.log(item_list);
 								//console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
 								for (const itemrecipe in item_list) {
-								if (key.contains(`${Object.values(recipes)[item][0]}`)) {
+								if (key.contains(Object.values(recipes)[item][0])) {
 								document.getElementById("itemList").lastChild.innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`;
 								console.log("1:" + key);
 								}
