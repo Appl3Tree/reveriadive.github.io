@@ -3927,6 +3927,7 @@ if (
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
 								}
+								const st = new Set();
 								for (const div of document.querySelectorAll('.panel-body')) {
 								if (st.has(div.textContent.trim())) {
 								div.parentNode.removeChild(div);	
