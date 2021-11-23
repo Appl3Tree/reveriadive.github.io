@@ -3925,6 +3925,7 @@ if (
 									}
 								else
 								console.log("Duplicates!");
+									}
 								}
 								else {
 								console.log("Challenges " + key.substr(10).replace(/\[|]/g, ""));
