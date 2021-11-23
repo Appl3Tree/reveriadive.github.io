@@ -3915,9 +3915,9 @@ if (
 								let item_amount = Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig);
 								document.getElementById("itemList").innerHTML += `<h2 style="text-align:center">${Object.values(recipes)[item][0]}</h2>`
 								document.getElementById("itemList").innerHTML += `<div class="panel-body" id="itemID"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}</a></div>`;
-								console.log(item_amount);
-								console.log(item_list);
-								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
+								//console.log(item_amount);
+								//console.log(item_list);
+								//console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
 								for (const itemrecipe in item_list) {
 								document.getElementById("itemList").innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`
 										}
