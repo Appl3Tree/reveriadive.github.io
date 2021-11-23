@@ -3920,10 +3920,6 @@ if (
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}</a></div>`;
 								for (const itemrecipe in item_list) {
 								document.getElementById("itemList").lastChild.innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`
-								if (document.getElementById("itemList").contains(item_list[item_recipe])) {
-								let test = document.getElementById("itemList").findIndex(item_list[item_recipe]);
-								item_list[test].innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`
-											}
 										}
 									}
 								}
