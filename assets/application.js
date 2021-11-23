@@ -3916,15 +3916,11 @@ if (
 								console.log(item_amount);
 								console.log(item_list);
 								console.log(document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText);
-								if (!document.getElementById("itemList").innerHTML.contains(Object.values(recipes)[item][0])) {
 								document.getElementById("itemList").innerHTML += `<h2 style="text-align:center">${Object.values(recipes)[item][0]}</h2>`
 								document.getElementById("itemList").innerHTML += `<div class="panel-body"><a href="${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerHTML.match(/href="([^"]*)/)[1]}">${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}</a></div>`;
 								for (const itemrecipe in item_list) {
 								document.getElementById("itemList").lastChild.innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`
 										}
-									}
-								else
-								console.log("Duplicates!");
 									}
 								}
 								else {
