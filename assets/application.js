@@ -3921,10 +3921,11 @@ if (
 								for (const itemrecipe in item_list) {
 								if (key.contains(`${Object.values(recipes)[item][0]}`)) {
 								document.getElementById("itemList").innerHTML.lastElementChild += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`;
-								console.log(key);
+								console.log("1:" + key);
 								}
 								else {
 								document.getElementById("itemList").innerHTML += `<ol><li style="list-style-type:disc">${item_list[itemrecipe]} ×${item_amount[itemrecipe] * value}</li></ol>`;
+								console.log("2:" + key)
 											}
 										}
 									}
