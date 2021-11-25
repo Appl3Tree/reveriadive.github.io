@@ -1,7 +1,15 @@
 <div style="position:relative;">
+
   <title>ReveriaDive</title>
-  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
+  <link data-turbolinks-track="true" href="./assets/application.css" media="all" rel="stylesheet">
+  <script>
+	localStorage.removeItem('hasCodeRunBefore');
+  </script>
+  <script data-turbolinks-track="true" src="./assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+  <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
+
 
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -20,10 +28,20 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/locations">Locations</a></li>
-        <li><a href="/items">Items</a></li>
         <li><a href="/monsters">Monsters</a></li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/items/category/Armour">Armour</a></li>
+            <li><a href="/items/category/Consumable">Consumables</a></li>
+            <li><a href="/items/category/Decor">Decor</a></li>
+			<li><a href="/items/category/Material">Materials</a></li>
+			<li><a href="/items/category/Tool">Tools</a></li>
+			<li><a href="/items/category/Weapon">Weapons</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
-          <a href="/shops" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shops <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="/shops">All Shops</a></li>
             <li><a href="/shops/77">Coin Shop</a></li>
@@ -31,7 +49,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="/recipes" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
               <li><a href="/recipes/8">Cook</a></li>
               <li><a href="/recipes/9">Blacksmith</a></li>
@@ -53,7 +71,7 @@
           </ul>
         </li>-->
       </ul>
-		<form accept-charset="UTF-8" action="https://fantasy-life.fandom.com/wiki/Special:Search?" class="navbar-form navbar-right" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
+        <form accept-charset="UTF-8" action="https://fantasy-life.fandom.com/wiki/Special:Search?" class="navbar-form navbar-right" method="get"><div style="display:none"><input name="utf8" type="hidden" value="✓"></div>
         <div class="form-group">
           <input class="form-control" id="query" name="query" placeholder="Quick search" type="search">
         </div>
@@ -64,11 +82,10 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container">
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-<h1>Castele Blouse</h1>
+<h1>Emerald Ring</h1>
 <div class="row">
   <div class="col-md-6">
     <h3>Item description</h3>
@@ -76,20 +93,20 @@
       <table class="table table-bordered">
         <tbody><tr>
           <th>Category</th>
-          <td><a href="../items/category/Armour">Armour</a></td>
+          <td><a href="http://www.reveriaexplorer.com/items/category/Armour">Armour</a></td>
         </tr>
         <tr>
           <th>Description</th>
           <td>
-              Traditional garb from Castele's history. Very popular among Castelian women.
+              A ring adorned with a large Emerald. Shines a deep green, like Reveria's dense forests
           </td>
         </tr>
         <tr>
           <th>Rarity</th>
           <td>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
                 <span class="glyphicon glyphicon-star-empty"></span>
                 <span class="glyphicon glyphicon-star-empty"></span>
           </td>
@@ -101,22 +118,22 @@
         <table class="table table-bordered">
           <tbody><tr>
             <th>Category</th>
-            <td><a href="../items/category/Top">Top</a></td>
+            <td><a href="http://www.reveriaexplorer.com/items/category/Accessory">Accessory</a></td>
           </tr>
           <tr>
             <th>Defence</th>
-            <td>3</td>
+            <td>2</td>
           </tr>
           <tr>
             <th>Magic Defence</th>
-            <td>0</td>
+            <td>6</td>
           </tr>
           <tr>
             <th>Special Effects</th>
             <td>
               <ul>
                 <li>
-                    ...
+                    Wind element +
                 </li>
                 <li>
                     ...
@@ -126,12 +143,11 @@
           </tr>
           <tr>
             <th>Required level</th>
-            <td></td>
+            <td>20</td>
           </tr>
           <tr>
             <th>Gender requirement</th>
             <td>
-                Female only
             </td>
           </tr>
         </tbody></table>
@@ -141,12 +157,13 @@
         <table class="table table-bordered">
           <tbody><tr>
             <th>Life</th>
-            <td>Tailor</td>
+            <td>Alchemist</td>
           </tr>
           <tr>
             <th>Ranking</th>
             <td>
-              Fledgling
+              Expert
+                (High Level)
             </td>
           </tr>
         </tbody></table>
@@ -158,11 +175,15 @@
             <th>Quantity</th>
           </tr>
             <tr>
-              <td><a href="../items/167">Dandelion Cotton</a></td>
-              <td>2</td>
+              <td><a href="http://www.reveriaexplorer.com/items/651">Emerald</a></td>
+              <td>1</td>
             </tr>
             <tr>
-              <td><a href="../items/174">String</a></td>
+              <td><a href="http://www.reveriaexplorer.com/items/940">Platinum Ingot</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.reveriaexplorer.com/items/783">Earth Mana</a></td>
               <td>1</td>
             </tr>
         </tbody></table>
@@ -179,8 +200,12 @@
           </tr>
           </thead>
             <tbody><tr>
-              <td><a href="../shops/1">Castele Fashion Boutique</a></td>
-              <td>420</td>
+              <td><a href="http://www.reveriaexplorer.com/shops/16">Snoot's Emporium</a></td>
+              <td>12000</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.reveriaexplorer.com/shops/48">Snoot's Emporium (Upstairs)</a></td>
+              <td>12000</td>
             </tr>
         </tbody></table>
       </div>
@@ -189,5 +214,3 @@
     </div>
     <div class="col-md-2"></div>
   </div>
-</div>
-</div>
