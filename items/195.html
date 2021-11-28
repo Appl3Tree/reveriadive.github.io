@@ -1,11 +1,11 @@
 <div style="position:relative;">
 
   <title>ReveriaDive</title>
-  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet">
+  <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet">
   <script>
 	localStorage.removeItem('hasCodeRunBefore');
   </script>
-  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <script data-turbolinks-track="true" src="../assets/application.js"></script>
   <meta content="authenticity_token" name="csrf-param">
   <meta content="LN7JmnV3+qWaNsoHM1+D5FRic71/QdV7CFFCcdWQn0Q=" name="csrf-token">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
@@ -82,22 +82,29 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
     <div class="col-md-8">
-<h1>Power Spray</h1>
+<h1>Energy Powder</h1>
 <div class="row">
   <div class="col-md-6">
     <h3>Item description</h3>
     <div class="">
       <table class="table table-bordered">
-        <tbody><tr>
+        <tbody>
+            <td colspan="2">
+              <p class="text-center">
+                <img alt="195" src="/assets/items/Energy_Powder.png">
+              </p>
+            </td>		
+		<tr>
           <th>Category</th>
           <td><a href="/items/category/Consumable">Consumable</a></td>
         </tr>
         <tr>
           <th>Description</th>
           <td>
-              Temporarily increases attack power. Restores some HP.
+              Restores some SP of the whole party.
           </td>
         </tr>
         <tr>
@@ -122,7 +129,7 @@
           <tr>
             <th>Ranking</th>
             <td>
-              Expert
+              Adept
             </td>
           </tr>
         </tbody></table>
@@ -134,16 +141,12 @@
             <th>Quantity</th>
           </tr>
             <tr>
-              <td><a href="/items/327">Arch Alcheweed</a></td>
+              <td><a href="/items/33">Vitalweed</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="/items/436">Magic Powder</a></td>
               <td>2</td>
-            </tr>
-            <tr>
-              <td><a href="/items/440">Sharp Claws</a></td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td><a href="/items/437">Demonic Powder</a></td>
-              <td>1</td>
             </tr>
         </tbody></table>
       </div>
@@ -159,12 +162,12 @@
           </tr>
           </thead>
             <tbody><tr>
-              <td><a href="/shops/44">Moley (Royal Cabin Well)</a></td>
-              <td>2000</td>
+              <td><a href="/shops/16">Snoot's Emporium</a></td>
+              <td>1200</td>
             </tr>
             <tr>
-              <td><a href="/shops/51">Woodcutter Shop (Elderwood Village)</a></td>
-              <td>2000</td>
+              <td><a href="/shops/29">Al Maajik General Goods</a></td>
+              <td>1200</td>
             </tr>
         </tbody></table>
       </div>
@@ -178,6 +181,12 @@
           </tr>
           </thead>
             <tbody><tr>
+              <td><a href="/locations/41">East Levitania</a></td>
+              <td>
+                Chest
+              </td>
+            </tr>
+            <tr>
               <td><a href="/locations/39">Central Levitania</a></td>
               <td>
                 Chest
@@ -186,5 +195,7 @@
         </tbody></table>
       </div>
   </div>
-</div></div></div>
+</div>
+    </div>
+    <div class="col-md-2"></div>
   </div>
