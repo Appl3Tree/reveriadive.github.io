@@ -3908,7 +3908,7 @@ if (
 								item -= 1;
 								else
 								item += 498;
-								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`, `%c${item}`, 'font-weight: bold;');
+								console.log(`${Object.values(recipes)[item][0]} : ${document.getElementById("recipes_" + key.substr(7).replace(/\[|]/g, "")).parentNode.parentNode.children[0].innerText}`);
 								let item_list = Object.values(recipes)[item][1].substr(4).replace(/ \d [^\w\w+]/ig, ',').split(', ');
 								let item_amount = Object.values(recipes)[item][1].replace(/ \W w*/).match(/\d+/ig);
 								console.log(item_amount);
