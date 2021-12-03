@@ -3902,7 +3902,7 @@ if (
 								if (key.includes("recipes")) {
 								if (parseInt(value)) {
 								let item = Number(key.substr(7).replace(/\[|]/g, ""));
-								//console.log(`${Object.values(recipes)[item][1]}`);
+								console.log(`${item}`);
 								if (item >= 91 && item <= 588)
 								item -= 91;
 								else if (item >= 589)
