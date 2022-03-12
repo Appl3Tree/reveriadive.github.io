@@ -6,20 +6,21 @@
     <title>ReveriaDive</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./assets/applicationbs5.css" rel="stylesheet">
-    <script src="./assets/applicationbs5.js"></script>
+    <link href="/assets/applicationbs5.css" rel="stylesheet">
+    <script src="/assets/applicationbs5.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
     <nav class="navbar navbar-dark bg-dark" role="navigation">
         <div class="container-fluid justify-content-between">
-            <a class="navbar-brand" href="./online.html">
-                <img src="./assets/index.png" alt="Reveria Dive" style="width:30px;">
+            <a class="navbar-brand" href="/online.html">
+                <img src="/assets/index.png" alt="Reveria Dive" style="width:30px;">
             </a>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
 		<a class="nav-link dropdown-toggle" href="#" id="GroupDrop1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		  Characters
+		  Menu
 		  </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="GroupDrop1">
-                <li><a class="dropdown-item" href="#">Evolutions</a></li>
+                <li><a class="dropdown-item" href="#">Characters</a></li>
+                <li><a class="dropdown-item" href="/online-evolutions.html">Evolutions</a></li>
                 <li><a class="dropdown-item" href="#">Missions</a></li>
                 <li><a class="dropdown-item" href="#">Quests</a></li>
 				<li><a class="dropdown-item" href="#">Rankings</a></li>
@@ -39,12 +40,12 @@
 				<li><a class="dropdown-item" href="#">Weapons</a></li>
             </ul>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
-		<a class="nav-link" href="./online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+		<a class="nav-link" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
 		  Locations
 		  </a>
 		</li>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
-		<a class="nav-link" href="./online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
+		<a class="nav-link" href="/online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
 		  Monsters
 		  </a>
 		</li>
@@ -70,12 +71,15 @@
             <div class="accordion-item">
                 <h1 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne" style="border: none;">
-                        Character
+                        Menu
                     </button>
                 </h1>
                 <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labeledby="flush-headingOne" data-bs-parent="#accordions">
                     <div class="btn-group d-grid" role="group" aria-label="Items">
+                        <button type="button" class="btn btn-secondary">Characters</button>
+                        <a class="d-grid" href="/online-evolutions.html">
                         <button type="button" class="btn btn-secondary">Evolutions</button>
+                        </a>
                         <button type="button" class="btn btn-secondary">Missions</button>
                         <button type="button" class="btn btn-secondary">Quests</button>
                         <button type="button" class="btn btn-secondary">Rankings</button>
@@ -99,10 +103,10 @@
                         </div>
                     </div>
                 </div>
-				<a class="btn btn-dark d-grid" href="./online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+				<a class="btn btn-dark d-grid" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false" style="text-decoration: underline;">
 				Locations
 				</a>
-				<a class="btn btn-dark d-grid" href="./online-monsters.html" id="GroupDrop3" role="button" aria-expanded="false">
+				<a class="btn btn-dark d-grid" href="/online-monsters.html" id="GroupDrop3" role="button" aria-expanded="false" style="text-decoration: underline;">
 				Monsters
 				</a>
                 <div class="accordion-item">
