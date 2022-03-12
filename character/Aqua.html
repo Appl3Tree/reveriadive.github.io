@@ -6,13 +6,13 @@
     <title>ReveriaDive</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/assets/applicationbs5.css" rel="stylesheet">
-    <script src="./assets/applicationbs5.js"></script>
+    <link href="./assets/applicationbs5.css" rel="stylesheet">
+    <script src="../assets/applicationbs5.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0,user-scalable=yes">
     <nav class="navbar navbar-dark bg-dark" role="navigation">
         <div class="container-fluid justify-content-between">
-            <a class="navbar-brand" href="/online.html">
-                <img src="./assets/index.png" alt="Reveria Dive" style="width:30px;">
+            <a class="navbar-brand" href="./online.html">
+                <img src="../assets/index.png" alt="Reveria Dive" style="width:30px;">
             </a>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
 		<a class="nav-link dropdown-toggle" href="#" id="GroupDrop1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,12 +39,12 @@
 				<li><a class="dropdown-item" href="#">Weapons</a></li>
             </ul>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
-		<a class="nav-link" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+		<a class="nav-link" href="./online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
 		  Locations
 		  </a>
 		</li>
         <li class="nav-item dropdown d-none d-sm-block d-md-block d-xl-block d-xxl-block">
-		<a class="nav-link" href="/online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
+		<a class="nav-link" href="./online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
 		  Monsters
 		  </a>
 		</li>
@@ -99,10 +99,10 @@
                         </div>
                     </div>
                 </div>
-				<a class="btn btn-dark d-grid" href="/online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
+				<a class="btn btn-dark d-grid" href="./online-locations.html" id="GroupDrop3" role="button" aria-expanded="false">
 				Locations
 				</a>
-				<a class="btn btn-dark d-grid" href="/online-monsters.html" id="GroupDrop4" role="button" aria-expanded="false">
+				<a class="btn btn-dark d-grid" href="./online-monsters.html" id="GroupDrop3" role="button" aria-expanded="false">
 				Monsters
 				</a>
                 <div class="accordion-item">
@@ -123,34 +123,39 @@
             </div>
         </div>
     </div>
-    <div class="container">
-    <h3 style="text-align:center; text-color: #e5e3e2; padding-top:5px;">Locations</h3>
-	<table class="table table-dark table-hover">
-	<thead><tr><th><img src="./assets/regions/Castelle.png" alt="Reveria Dive" style="width:35px;">Castelle</th></img></tr></thead>
-	<tbody>
-	<td><a href="/online-locations/">East Grassy Plains</a></td></tr>
-    <tr>
-	<td><a href="/online-locations/">Elderwood</a></td></tr>
-	<tr>
-	<td><a href="/online-locations/">Farley's Plantation</a></td></tr>
-	<tr>
-	<td><a href="/online-locations/">Haniwa Cave</a></td></tr>
-	<tr>
-	<td><a href="/online-locations/">Mt. Snowpeak Foothill</a></td></tr>
-	<tr>
-	<td><a href="/online-locations/">Waterfall Cave</a></td></tr>
-	<tr>
-	<td><a href="/online-locations/">West Grassy Plains</a></td></tr>
-	<thead style="border-top-width: 0px;"><tr><th><img src="./assets/regions/Port_Puerto.png" alt="Reveria Dive" style="width:35px;">Port Puerto</th></img></tr></thead>
-	<tr>
-	<td><a href="/online-locations/">Kiraby Coast</a></td></tr>	
-	<thead style="border-top-width: 0px;"><tr><th><img src="./assets/regions/Al_Maajik.png" alt="Reveria Dive" style="width:35px;">Al Maajik</th></img></tr></thead>	
-	<tr>
-	<td><a href="/online-locations/">Drysand Desert</a></td></tr>
-	<tr>
-	</tbody>
-	</table>
-	</div>
+		<ul class="nav nav-tabs" id="Aqua" role="tablist">
+		<li class="nav-item" role="presentation">
+		<button class="nav-link active" id="AquaTab" data-bs-toggle="tab" data-bs-target="#AquaPane" type="button" role="tab" aria-controls="AquaPane" aria-selected="true">2D</button>
+		</li>		
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="Evo1AquaTab" data-bs-toggle="tab" data-bs-target="#Evo1AquaPane" type="button" role="tab" aria-controls="Evo1AquaPane" aria-selected="false">Evo-1</button>
+		</li>
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="Evo2AquaTab" data-bs-toggle="tab" data-bs-target="#Evo2AquaPane" type="button" role="tab" aria-controls="Evo2AquaPane" aria-selected="false">Evo-2</button>
+		</li>
+		<li class="nav-item" role="presentation">
+		<button class="nav-link" id="Evo3AquaTab" data-bs-toggle="tab" data-bs-target="#Evo3AquaPane" type="button" role="tab" aria-controls="Evo3AquaPane" aria-selected="false">Evo-3</button>
+		</li>
+		</ul>
+		<div class="card bg-dark">
+		<div class="card-body">
+		<h5 class="card-title">Aqua</h5>
+		</div>
+		<div class="tab-content" id="AquaTabContent">
+		<div class="tab-pane fade show active" id="AquaPane" role="tabpanel" aria-labelledby="AquaTab">
+		<img src="./Aqua/55_2d.png" alt="Aqua" style="width: 275px;"></img>
+		</div>
+		<div class="tab-pane fade" id="Evo1AquaPane" role="tabpanel" aria-labelledby="Evo1AquaTab">
+		<img src="./Aqua/55_evo1.png" alt="Aqua/Evo-1" style="width: 275px;"></img>
+		</div>
+		<div class="tab-pane fade" id="Evo2AquaPane" role="tabpanel" aria-labelledby="Evo2AquaTab">
+		<img src="./Aqua/55_evo2.png" alt="Aqua/Evo-2" style="width: 275px;"></img>
+		</div>
+		<div class="tab-pane fade" id="Evo3AquaPane" role="tabpanel" aria-labelledby="Evo3AquaTab">
+		<img src="./Aqua/55_evo3.png" alt="Aqua/Evo-3" style="width: 275px;"></img>
+		</div>
+		</div>
+		</div>
 </body>
 
 </html>
